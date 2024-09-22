@@ -32,3 +32,21 @@ margin: 0 auto;
 .buttons{
   margin: 0 auto;
 }
+button{
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    transition: 2s;
+    width: 185px;
+    margin: 40px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 17px;
+    background: linear-gradient(90deg, rgb(0, 102, 204) 0%, rgb(197, 0, 204) 100%);
+    --hover-width: 200px;
+    }
+    button:hover{
+    width: 177px;
+    background: rgb(0, 102, 204) none repeat scroll 0% 0% / auto padding-box border-box;
+    }
