@@ -24,6 +24,7 @@ img{
   flex-direction: column;
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.7s;
   height: 100vh;
   justify-content: center;
 margin: 0 auto;
