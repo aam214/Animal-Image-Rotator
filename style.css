@@ -8,7 +8,12 @@ body{
 }
 h1{
   text-align: center;
-  margin-top: 100px;
+  font-size: 70px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 4px;
+  margin-top: 40px;
 }
 img{
   border-radius: 8px;
@@ -27,7 +32,7 @@ margin: 0 auto;
 }
 .container span{
   position: absolute;
-  transform: rotateY(calc(var(--i) *45deg)) translateZ(480px);
+  transform: rotateY(calc(var(--i) *45deg)) translateZ(500px);
 }
 .buttons{
   margin: 0 auto;
@@ -37,16 +42,16 @@ button{
     font-size: 20px;
     border: none;
     color: rgb(255, 255, 255);
-    padding: 20px 30px;
-    transition: 2s;
+    padding: 15px 20px;
+    transition: 1s;
     width: 185px;
-    margin: 40px;
+    margin: 70px;
     box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
     border-radius: 17px;
     background: linear-gradient(90deg, rgb(0, 102, 204) 0%, rgb(197, 0, 204) 100%);
     --hover-width: 200px;
     }
     button:hover{
-    width: 177px;
+    width: 200px;
     background: rgb(0, 102, 204) none repeat scroll 0% 0% / auto padding-box border-box;
     }
