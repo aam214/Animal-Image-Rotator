@@ -1,9 +1,9 @@
 const photoContainer = document.querySelector(".container");
 const nextButton = document.getElementById("next-button");
 const backButton = document.getElementById("back-button");
-//for transform
-let n = 0;
 let timer;
+let n = 0;
+
 
 
 backButton.addEventListener("click", () => {
@@ -14,18 +14,19 @@ backButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () => {
+  //console.log("clicked!");
   n = n - 45; 
   clearTimeout(timer);
   updateImageGallery();
 })
 
-let updateImageGallery = () => {
-  photoContainer.style.transform =
+const updateImageGallery = () => {
+photoContainer.style.transform =
 `perspective(1000px) rotateY(${n}deg)`;
 
 timer = setTimeout(() => {
   n = n - 45;
   updateImageGallery();
-}, 3500);
+}, 3000);
 }
 updateImageGallery();
